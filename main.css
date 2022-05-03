@@ -137,3 +137,36 @@ main div div img {
     }
 
 }
+
+/*Estilos formulario de contacto*/
+
+
+.imagen_formulario {
+    display: block;
+    width: 50%;
+}
+
+
+.formulario-contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.formulario-label-contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formulario-label-contenedor input {
+    width: 50%;
+
+}
+
+.boton-formulario {
+    width: 30%;
+
+}
+
