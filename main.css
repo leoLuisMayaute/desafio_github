@@ -29,16 +29,21 @@ nav {
     justify-content: space-evenly;
     background-color: rgb(239, 240, 220);
     margin-bottom: 2rem;
+    padding-right: 1em;
 }
 
 nav ul li {
     list-style: none;
+    transition-property: all;
+    transition-duration: 180ms;
+    transition-timing-function: ease-in-out;
 }
 
 nav ul li:hover,
 nav ul li:focus {
     border-bottom: 1px solid #aaa;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 header {
