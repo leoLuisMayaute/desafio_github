@@ -66,6 +66,14 @@ main {
     justify-content: space-between;
 }
 
+h1, h2, h3 {
+    animation-name: text-bouncing;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 500ms;
+    animation-delay: 250ms;
+}
+
 p {
     margin-block: 1.5rem;
     max-width: 70em;
@@ -208,3 +216,41 @@ main div div img {
     cursor: pointer;
 }
 
+@keyframes fade-in {
+    0%{
+        transform: translateX(-5rem);
+        opacity: 0;
+    }
+
+    50%{
+        transform: translateX(-2.5rem);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes text-bouncing {
+    0%{
+        transform: translateY(0.3rem);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0.2rem);
+    }
+}
+
+.split img {
+    opacity: 1;
+    animation-name: fade-in;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 500ms;
+    animation-delay: 250ms;
+}
