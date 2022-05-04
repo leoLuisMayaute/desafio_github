@@ -35,6 +35,12 @@ nav ul li {
     list-style: none;
 }
 
+nav ul li:hover,
+nav ul li:focus {
+    border-bottom: 1px solid #aaa;
+    cursor: pointer;
+}
+
 header {
     grid-area: "header";
     text-align: center;
@@ -143,7 +149,8 @@ main div div img {
 
 .imagen_formulario {
     display: block;
-    width: 100%;
+    width: 20%;
+    margin: auto;
 }
 
 .formulario-contenedor {
